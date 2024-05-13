@@ -1,0 +1,163 @@
+
+.newTaskFormOuterDiv {
+    /* border: 1px solid red; */
+    margin: 4px 0 8px 8px;
+    padding: 8px 0 8px 12px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 0px #0000001F, -1px -1px 4px 0px #0000001F;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+/* title */
+.inputNewTaskForm1 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* descp */
+.inputNewTaskForm2 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.newTaskFormInnerDiv {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.newTaskFormInnerDiv3,
+.newTaskFormInnerDiv2,
+.newTaskFormInnerDiv1 {
+    height: 25px;
+    border: 1px solid #666666;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1px 8px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.newTaskFormInnerDiv3,
+.newTaskFormInnerDiv1 {
+    padding: 1px 2px 1px 8px;
+}
+
+.newTaskFormSecondInnerDiv1{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+    margin-left: -8px;
+    width: 100%;
+}
+
+.newTaskFormInnerDiv1{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.divForCancelDueDate{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 10%;
+    height: 100%;
+    /* margin-right: 4px; */
+}
+.divForCancelDueDate img{
+    /* border: 1px solid red; */
+    margin-left: 8px;
+}
+
+
+/* additional for NTF */
+.additionalNTF{
+padding: 0;
+}
+
+.additionalNTF p{
+    margin-right: 6px;
+}
+
+
+.newTaskFormInnerDiv3 img,
+.newTaskFormInnerDiv2 img,
+.newTaskFormInnerDiv1 img {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.newTaskFormInnerDiv1 span img{
+    padding: 0;
+    margin: 0;
+    margin-left: 4px;
+    /* border: 1px solid red; */
+}
+
+/* common for all */
+.commonMargin {
+    margin-bottom: 6px;
+}
+
+/* button div and button */
+.ButtonDivs {
+    /* border: 0.5px solid #0000003B; */
+    text-align: end;
+    height: 2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.buttonCancel {
+    border: none;
+    background-color: #F5F5F5;
+    width: 2rem;
+    height: 1.8rem;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonCancel:hover {
+    background-color: #e9e6e6;
+    cursor: pointer;
+}
+
+.buttonSend {
+    border: none;
+    width: 2rem;
+    height: 1.8rem;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #a6d6fa;
+    cursor: not-allowed;
+}
+
+.buttonSendWithoutTitle{
+    border: none;
+    width: 2rem;
+    height: 1.8rem;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #2196F3;
+    cursor: pointer;
+}

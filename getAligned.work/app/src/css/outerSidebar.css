@@ -1,0 +1,39 @@
+.outerSidebarHeader{
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.closeImageDiv{
+    /* border: 1px solid red; */
+    margin-left: 10px;
+}
+
+.closeImageDiv :hover{
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hamburgerMenu{
+    /* border: 1px solid red; */
+    margin-right: 10px;
+
+}
+
+.getAlignedDiv{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 135px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.getAlignedDiv p{
+    font-size: 16px !important;
+    font-weight: 500;
+}

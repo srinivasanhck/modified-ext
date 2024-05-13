@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif" !important;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-y:visible;
+}
+
+
+#root {
+  // padding: 10px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    background-color: #d32f2f;
+    color: #fafafa;
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-size: 12px;
+  }
+
+  &__icon {
+    width: 18px;
+    margin-left: 10px;
+    display: flex;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-left: 10px;
+  }
+}
+
+
+.boxShadowCommon{
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.463) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.463) 0px 0px 2px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}

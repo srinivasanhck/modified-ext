@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.extension-container-iframe {
+  pointer-events: none;
+  /* z-index: 100000000000000000; */
+}
+
+*{
+  /* font-family: "Poppins"; */
+}
+
+.extension-container-iframe iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition-duration: 250ms;
+
+  position: relative;
+  z-index: 5;
+}
+
+.extension-container-iframe.active {
+  pointer-events: auto;
+}
+
+.extension-container-iframe.active iframe.extension-iframe-ready {
+  visibility: visible;
+  opacity: 1;
+}
+
+.extension-container-iframe.active .extension-container-iframe__move {
+  visibility: visible;
+  opacity: 1;
+}
+
+.extension-container-iframe.dragging iframe {
+  pointer-events: none;
+}
+
+.extension-container-iframe__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  background-color: rgba(10, 10, 10, 0.4);
+  transition-duration: 100ms;
+}
+
+.extension-container-iframe.dragging .extension-container-iframe__overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.extension-container-iframe__move {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 70px;
+  height: 70px;
+
+  cursor: move !important;
+  z-index: 10;
+
+  visibility: hidden;
+  opacity: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition-duration: 250ms;
+}
+
+.extension-container-iframe__move img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.2;
+}
+
+.extension-container-iframe__move:hover {
+  background-color: rgba(10, 10, 10, 0.2);
+  border-radius: 8px 0 8px 0;
+}
+
+.extension-container-iframe__resize-up,
+.extension-container-iframe__resize-down,
+.extension-container-iframe__resize-left,
+.extension-container-iframe__resize-right,
+.extension-container-iframe__resize-up-left,
+.extension-container-iframe__resize-up-right,
+.extension-container-iframe__resize-down-right,
+.extension-container-iframe__resize-down-left {
+  display: none;
+}
+
+[role="main"][jsaction*="CLIENT"] {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* extension-popup */
+.extension-popup{
+  position: fixed;
+  z-index: 99999999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 10, 10, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.extension-popup.active{
+  visibility: visible;
+  opacity: 1;
+  pointer-events:auto;
+}
+
+.extension-popup-inner{
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+/* extension-toast */
+.extension-toast{
+  position: fixed;
+  z-index: 99999999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 245px; */
+  width: 260px;
+  height: 35px;
+  background-color: green;
+  color: white;
+  /* top: 85%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.extension-toast:after {
+  content: '';
+  position: absolute;
+  top: -19px;
+  border: 10px solid transparent;
+  /* border-top-color: forestgreen;  */
+  border-top-color: #202124; 
+  border-top-color: green; 
+  transform: rotate(180deg);
+}
+
+.extension-notespopup.active,
+.extension-toast.active{
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.extension-toast-inner{
+display: flex;
+}
+.extension-toast p{
+  font-family: "poppins";
+font-size: 15px;
+}
+
+ .extension-toast-cancel{
+  display: flex;
+ }
+
+ .extension-notespopup-cancel:hover,
+ .extension-toast-cancel:hover{
+  cursor: pointer;
+ }
+
+
+/*add notes */
+
+ .extension-notespopup{
+  position: fixed;
+  z-index: 99999999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  width: 280px;
+  height: 110px;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-align: -webkit-center;
+}
+
+/* .extension-notespopup:after{
+  content: '';
+  position: absolute;
+  top: -27px;
+  right: 2.5rem;
+  border: 13px solid transparent;
+  border-top-color: #202124; 
+  transform: rotate(180deg);
+} */
+/* border-top-color: forestgreen;  */
+
+.extension-notespopup.active{
+  visibility: visible;
+  opacity: 1;
+  /* z-index: 9999999999999999; */
+  pointer-events: auto;
+  /* border: 3px solid #003C6B; */
+  box-shadow: 0px 6px 6px -3px #00000033,
+  0px 10px 14px 1px #00000024,
+  0px 4px 18px 3px #0000001F;
+
+  background-color: white;
+}
+.extension-notespopup-inner{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.extension-notespopup-text{
+  width: 80%;
+  position: relative;
+  top: 13px;
+  left: 15px;
+  /* border: 1px solid green; */
+}
+
+.extension-notespopup-cancel{
+  display: flex;
+  width: 14%;
+  height: 1.3rem;
+  /* border: 1px solid black; */
+}
+
+.extension-notespopup-addTask{
+  margin-top: 24px;
+  width: 60%;
+  height: 50px;
+  /* border: 1px solid red; */
+}
+
+.extension-notespopup-button{
+  /* background-color: #003C6B; */
+  background-color: white;
+  color: #2196F3;
+border: 1px solid #2196F3;
+font-size: 16px;
+  /* color: white; */
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 26px;
+  width: 55%;
+  padding: 3px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.extension-notespopup-button:hover{
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+
+/* //catchupinnerbutton popup */
+
+.extension-catchuInnerButtonPopup{
+  position: absolute;
+  z-index: 99999999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  width: 300px;
+  height: 85px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  text-align: center;
+  /* text-align: -webkit-center; */
+}
+
+.extension-catchuInnerButtonPopup:after{
+  content: '';
+  position: absolute;
+  top: -26px;
+  right: 8.5rem;
+  border: 13px solid transparent;
+  /* border-top-color: forestgreen;  */
+  border-top-color: #202124; 
+  transform: rotate(180deg);
+}
+
+.extension-catchuInnerButtonPopup.active{
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999999999999999;
+  pointer-events: auto;
+  border: 2px solid #003C6B;
+  background-color: white;
+}
+
+
+
+/* floating button related */
+
+#floatingOuterDiv {
+  font-family: "poppins" !important;
+  position: fixed;
+  bottom: 2rem;
+  right: 0;
+  z-index: 1000;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+
+}
+
+.floatingButtonImage{
+  width: 40px;
+  border-radius: 5px 0 0 5px;
+}
+
+#catchUpLaterDiv {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  width: 230px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  box-shadow: 0px 6px 6px -3px #00000033,0px 10px 14px 1px #00000024, 0px 4px 18px 3px #0000001F;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px 5px 0px 5px;
+  text-align: -webkit-center !important;
+}
+
+#moveTocatchupDiv{
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+#closeCatchUpLaterDiv{
+width: 15%;
+/* border: 1px solid red; */
+}
+
+#catchupLaterOrginalButton{
+  color: white;
+    border: none;
+    background: #E37400;
+    background: #003C6B;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#closeCatchUpLaterDiv img{
+  width: 100%;
+}
+
+#catchupLeftDiv{
+  text-align: center;
+  padding-left: 10px;
+}
+
+#floatingOuterDiv:hover {
+  transform: translateX(-10px); /* Move the floating button slightly to the right on hover */
+}
+
+#dragIcon {
+  position: fixed;
+  top: 0px;
+  right: -10px; 
+  width: 30px;
+  height: 40px;
+  cursor: grab; 
+  display: none; /* Initially hide the drag icon */
+  background-color: black;
+}
+
+#floatingOuterDiv:hover #dragIcon {
+  display: block; /* Show the drag icon on hover */
+}
+
+#floatingOuterDiv:hover {
+  width: 60px; /* Increase the width on hover */
+}
+
+/* 
+@media (prefers-color-scheme: dark) {
+  .catchup-button-root__title {
+    color: white !important; 
+  }
+  .catchup-button-root:hover{
+    background-color: rgb(65,65,65) !important;
+  }
+  .catchup-button-root.active {
+    background-color: rgb(89,89,89);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .catchup-button-root__title {
+    color: black !important; 
+  }
+} */

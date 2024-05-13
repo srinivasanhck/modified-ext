@@ -1,0 +1,9 @@
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedEnd {
+    display: none; 
+  }
+
+  .base-Popper-root.MuiPickersPopper-root.css-1anqmj6-MuiPopper-root-MuiPickersPopper-root {
+    top: 30% !important;
+  }
+  

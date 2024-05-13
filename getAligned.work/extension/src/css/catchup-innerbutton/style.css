@@ -1,0 +1,24 @@
+.tooltip-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.tooltip-text {
+    font-size: 14px;
+}
+
+.pointer-arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}

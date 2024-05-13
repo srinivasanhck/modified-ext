@@ -1,0 +1,370 @@
+.OuterBox{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.qqq{
+  /* border: 1px solid red; */
+}
+
+.inputBox{
+    padding: 10px;
+    margin: 10px 0;
+    width: 270px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    box-shadow:0px 2px 0px 2px rgba(0, 60, 107, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tagg{
+  padding: 5px;
+}
+
+.div{
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+    margin-left: 1.55rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.divv{
+  margin-bottom: 0px;
+}
+
+.textArea{
+    height: 80px;
+    resize: none;
+    overflow-y: auto;
+    
+}
+
+.textArea::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .saveDiv{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+
+  .buttonsTEF{
+    width: 80px;
+    height: 38px;
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .buttons1TEF{
+    width: 80px;
+    height: 38px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .buttons1TEF:hover{
+    box-shadow: 0px 3px 1px -2px #00000033,  0px 2px 2px 0px #00000024,0px 1px 5px 0px #0000001F;
+  }
+  
+  .buttonsTEF:hover{
+    box-shadow: 0px 3px 1px -2px #00000033,  0px 2px 2px 0px #00000024,0px 1px 5px 0px #0000001F;
+  }
+
+  .buttons{
+    font-size: medium;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buttons:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  
+  .cancel{
+    border: none;
+    /* color: #E37400; */
+    background-color: white;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cancel:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  }
+
+  .submit{
+    background-color: #E37400;
+    border:none;
+    color: white;
+    transition: box-shadow 0.3s ease;
+  }
+  .submit:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.459);
+    transform: scale(1.05);
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 102%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    margin-top: 5px;
+    left: -3px;
+  }
+  
+  .option {
+    padding: 12px 16px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    box-shadow: 0 0px 3px rgba(0,0,0,0.1);
+  }
+  
+  .option:hover {
+    background-color: #ebe9e9c1;
+  }
+
+
+  .tags{
+    /* border: 1px solid green; */
+    width: 13rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .inputOfTag::placeholder {
+    font-size: smaller; /* Font size for the placeholder text */
+}
+
+  .inputOfTag{
+    width: 80%;
+    border: none;
+    /* border: 1px solid red; */
+    font-size: medium;
+    outline: none;
+  }
+
+  .tagImage{
+    margin-right: 10px;
+  }
+
+  .tagsDispalyDiv{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 85%;
+  }
+
+  .eachTag{
+    /* border: 1px solid black; */
+    width: 135px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 6px;
+    padding: 7px 15px;
+    background-color: #E37400;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .pTag{
+    font-weight: bold;
+    /* border: 1px solid red; */
+    width: 85%;
+    padding: 5px;
+    /* margin-right: 10px; */
+  }
+ 
+.eachTagImage{
+  /* border: 1px solid black; */
+  padding: 8px;
+}
+
+.eachTagImage:hover{
+  cursor: pointer;
+
+}
+
+.tagsInput{
+  width: 80%;
+  outline: none;
+  border: none;
+  font-size: medium;
+  padding-left: 30px; /* Adjust this value according to the width of your image */
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+
+.tagsInput::placeholder{
+  font-size: 15px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.outerDiv{
+  border: 1px solid transparent;
+  margin: 1rem 0 0 0;
+  text-align: center;
+  background-color: white;
+}
+
+.forMargin{
+  margin-bottom: 0.7rem;
+}
+
+.forMarginn{
+  margin-bottom: 1.3rem;
+}
+
+/* .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  display: none;
+} */
+
+.titleDiv{
+/* border: 1px solid green; */
+margin-top: 2rem;
+}
+
+.titleDivTextField{
+  width: 90%;
+}
+
+.selectDivCustomSelect{
+width: 90%;
+}
+
+.setReminderPicker{
+  width: 90%;
+  }
+  
+  .dueDatePciker{
+    width: 90%;
+  }
+  .dueDatePciker .MuiInputBase-input {
+    font-size: 12px !important; 
+    height: 20px; 
+  }
+
+  .textAreaNotes{
+    width: 90%;
+  }
+
+.menuItem{
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+
+.datePickerOuterDiv{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+.datepicker-wrapper{
+  display: flex;
+  border: 1px solid rgb(201,201,201);
+  /* border: 1px solid red; */
+  width: 80%;
+}
+
+.datePicker{
+height: 56px;
+font-size: medium;
+width: 85%;
+text-align: center;
+border: none;
+border: 1px solid rgb(196,196,196);
+margin-right: 23px;
+/* border-right: none; */
+}
+
+.timePicker{
+  width: 65%;
+  border: none;
+  outline: none;
+}
+
+.react-datepicker-popper {
+  left: auto !important;
+  right: 35px !important;
+}
+
+.datepicker-wrapper .react-datepicker__header {
+  background-color: #fff; 
+}
+
+.forMargin .datepicker-wrapper .react-datepicker-popper {
+  z-index: 1000; /* Adjust the z-index value as needed */
+}
+
+
+/* tags */
+.outerDivOfAddTags{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.addTagDiv{
+  width: 80%;
+  text-align: center;
+}
+
+
+/* notes */
+
+
+/* submit */
+.submitDiv{
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}

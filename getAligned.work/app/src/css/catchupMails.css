@@ -1,0 +1,84 @@
+.OuterDivCM{
+    /* border: 1px solid red; */
+    margin: 5px 5px 5px 10px;
+}
+
+.OuterDivInnerCM{
+/* border: 1px solid black; */
+padding: 5px;
+margin-bottom: 8px;
+cursor: pointer;
+
+}
+.showCreatedDateDiv{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.MailOuterCM{
+    /* border: 1px solid red; */
+       box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.463) 0px 0px 2px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.MailOuterCM p{
+    font-weight: 500;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+
+.MailOuterCM div{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #00000099;
+}
+
+.MailOuterCM img{
+    width: 14px;
+    margin-right: 5px;
+}
+
+.backButtonCM{
+    background-color: rgb(33, 150, 243);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    left: 46%;
+    cursor: pointer;
+}
+
+.backButtonCM img{
+    width: 10px;
+    margin-right: 2px;
+}
+
+/* catchup empty gif */
+.emptyMailsInCM{
+    margin-top: 30%;
+    width: 95%;
+    text-align: center;
+}
+
+.emptyMailsInCMInnerDiv p:nth-child(1){
+font-weight: 600;
+font-size: 14px;
+margin-bottom: 0.5rem;
+}
+
+.emptyMailsInCMInnerDiv p:nth-child(2){
+font-weight: 400;
+font-size: 14px;
+}

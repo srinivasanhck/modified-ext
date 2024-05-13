@@ -1,0 +1,11 @@
+.extension-container-iframe--extension-popup iframe {
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 1px 2px 8px rgba(20, 20, 20, 0.5);
+
+  transition-duration: 250ms;
+}
+
+.extension-container-iframe--extension-popup {
+  position: fixed;
+}

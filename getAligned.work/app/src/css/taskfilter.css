@@ -1,0 +1,25 @@
+.taskFilterOuterDiv {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 10px 8px; */
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.taskFilterOuterDiv Button {
+    /* border: 1px solid red; */
+    background-color: rgb(235, 235, 235);
+    color: black;
+    padding: 3px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.includes {
+    background-color: rgb(33, 150, 243) !important;
+    color: white !important;
+}

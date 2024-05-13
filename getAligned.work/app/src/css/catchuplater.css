@@ -1,0 +1,141 @@
+.OuterCatchupLaterDiv {
+  /* border: 1px solid red; */
+  margin: 5px;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.OuterCatchupLaterFirstDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.OuterCatchupLaterFirstDivImage{
+/* border: 1px solid green; */
+width: 15%;
+}
+
+.OuterCatchupLaterFirstDivImage img {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+}
+
+.catchupLaterTextDiv {
+  /* border: 1px solid red; */
+  width: 90%;
+  text-align: center;
+  margin: 0.8rem 0;
+  font-weight: 600;
+}
+
+.OuterCatchupLaterSecondDiv{
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 1rem;
+  /* padding: 4px; */
+}
+
+.addTasksDiv,
+.catchupLaterDiv{
+  /* border: 1px solid blue; */
+  width: 42%;
+}
+
+
+.catchupLaterDiv1 {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.addTasksDiv span {
+  /* color: rebeccapurple; */
+  margin-right: 3px;
+}
+
+.addTasksDiv{
+  /* border: 1px solid maroon; */
+
+}
+
+.catchupLaterButtonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.addTaskButtonDiv {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.addTaskButton,
+.catchupLaterButton {
+  width: 7.5rem;
+  height: 2.4rem;
+  /* background-color: #E37400; */
+  background-color: #003C6B;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 0 8px;
+}
+
+.addTaskButton {
+  /* background-color: #003C6B; */
+  background-color: #2196F3;
+}
+
+.loader-icon {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #003C6B;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.catchupLaterButton.loading {
+  background-color: #efd9c1d3;
+}
+
+.addTaskButton:hover,
+.catchupLaterButton:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.backToHome{
+  /* border: 1px solid red; */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 3rem;
+  right: 45%;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.backToHome:hover{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

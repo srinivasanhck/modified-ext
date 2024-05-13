@@ -1,0 +1,62 @@
+.outerDivOfTaskN{
+    /* border: 1px solid red; */
+    padding: 1rem;
+}
+
+.first{
+/* border: 1px solid red; */
+}
+
+input{
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+}
+
+.input1{
+    font-size: 18px;
+}
+.input2{
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+   
+}
+
+.btn1{
+    border: 1px solid grey;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn1 img{
+    margin-right: 4px;
+}
+
+.two{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two button:nth-child(3){
+    margin-top: 1rem;
+}
+
+.three{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.three button:nth-child(2){
+    background-color: red;
+    color: white;
+}

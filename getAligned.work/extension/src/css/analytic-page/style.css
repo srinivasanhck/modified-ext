@@ -1,0 +1,14 @@
+.extension-container-iframe--extension-analytic-page {
+  position: fixed;
+  top: 64px !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 99999999999999 !important;
+  width: initial !important;
+  height: initial !important;
+}
+
+.extension-container-iframe--extension-analytic-page iframe {
+  background-color: #fafafa;
+}

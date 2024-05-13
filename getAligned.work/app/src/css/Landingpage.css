@@ -1,0 +1,468 @@
+.landingOuterDiv {
+    /* border: 1px solid transparent; */
+    padding-bottom: 1rem;
+}
+
+/* 1st div */
+
+.fisstTopOuterDiv {
+    /* border: 1px solid green; */
+    padding: 0.8rem 2px 4px 8px;
+}
+
+.firstDivInnerButtonDiv {
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.firstButton {
+    /* border: 1px solid red; */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 49%;
+    padding: 15px 5px;
+    border-radius: 4px;
+}
+
+.firstButton img {
+    width: 35px !important;
+}
+
+.firstButton p:nth-child(4) {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 80px;
+    top: 36px;
+    font-size: 10px;
+}
+
+.firstButton p:nth-child(3) {
+    position: absolute;
+    top: 26px;
+    left: 48px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.firstButton p:nth-child(2) {
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    font-weight: 500;
+}
+
+.firstButtonInner {
+    /* border: 1px solid green; */
+}
+
+.firstUnique {
+
+    border: 0.5px solid #2196F3BF;
+    background-color: #0288D126;
+    box-shadow: -1px -1px 4px 0px #0000001F, 1px 1px 1px 0px #0000001F;
+}
+
+.secondUnique {
+    background: #174EA659;
+    border: 0.5px solid #014361BF;
+    box-shadow: -1px -1px 4px 0px #0000001F, 1px 1px 1px 0px #0000001F;
+}
+
+.firstDivInnerButtonDiv img {
+    width: 20%;
+}
+
+.catchupMailsBtnDiv {
+    /* border: 1px solid red; */
+
+}
+
+.catchupMailsBtnDiv p:nth-child(1) {
+    margin: 2px 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.catchupMailsBtnDiv p:nth-child(2) {
+    margin: 2px 0;
+    font-size: 24px;
+}
+
+.catchupMailsBtnDiv p:nth-child(3) {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* .firstDivInnerButtonDiv button:nth-child(1){
+    border: none;
+    width: 41%;
+    height: 7.8rem;
+    cursor: pointer;
+    background-color: #E37400;
+    color: white;
+    border-radius: 5px;
+}
+
+.firstDivInnerButtonDiv button:nth-child(2){
+    border: none;
+    width: 41%;
+    height: 7.8rem;
+    cursor: pointer;
+    background-color: #005A7A;
+    color: white;
+    border-radius: 5px;
+} */
+
+.firstDivInnerButtonDiv button:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.firstInnerDivInner1 {
+    /* border: 1px solid red; */
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font-size: 16px !important;
+}
+
+.firstInnerDivInner2 {
+    /* border: 1px solid red; */
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* background-color: #FBBC04; */
+    font-size: 14px;
+    /* width: 90px; */
+    /* text-align: center; */
+}
+
+.inProgress {
+    background-color: #FBBC04;
+}
+
+.completed {
+    background-color: green;
+    color: white;
+}
+
+.overdue {
+    background-color: crimson;
+    color: white;
+}
+
+
+
+.taskOuterDiv {
+    /* border: 1px solid green; */
+    /* box-shadow: rgba(9, 30, 66, 0.2) 0px 1px 1px, rgba(3, 9, 18, 0.2) 0px 0px 1px 1px; */
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.463) 0px 0px 2px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-right: 6px;
+}
+
+
+.createdDateShow {
+    /* border: 1px solid red; */
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: -1.2rem;
+}
+
+#borderLineLP {
+    border: 0.5px solid #00000029;
+    margin-bottom: 8px;
+    margin-top: 3px;
+    margin-left: -10px;
+    width: 106%;
+}
+
+.firstInnerDivLP {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstInnerDivLP div{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight:400;
+}
+
+.secondInnerDivLP {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-bottom: 10px; */
+    margin-top: 7px;
+}
+
+.secondInnerDivLP1 {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.secondInnerDivLP2 div:nth-child(1){
+margin-top: 0.5px;
+}
+
+.secondInnerDivLP2 {
+    width: 43%;
+    /* border: 1px solid green; */
+}
+
+
+/* 2nd div */
+
+.secondInnerDivv {
+    /* border: 1px solid slateblue; */
+    width: 98%;
+    height: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px; */
+}
+
+.secondInnerDivInner22 {
+    /* border: 1px solid red; */
+    width: 46%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.secondInnerDivInner22 span {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.secondInnerDivInner22 img {
+    width: 20px;
+}
+
+.secondInnerDivv {
+    color: rgb(114, 114, 114);
+}
+
+
+/* //fifth div */
+
+.fifthInnerDivOuterr {
+    /* border: 1px solid red; */
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.fifthInnerDiv2Commonn {
+    /* border: 1px solid red; */
+    width: 30%;
+    cursor: pointer;
+}
+
+.fifthInnerDiv2Commonn img {
+    width: 100%;
+}
+
+/* catchup empty gif */
+.emptyMailsInLP{
+    /* border: 1px solid red; */
+    margin-left: 10px;
+    margin-top: 20%;
+    width: 90%;
+    text-align: center;
+}
+
+.emptyMailsInLP img{
+    /* border: 1px solid green; */
+    margin-left: 3rem;
+}
+
+.emptyMailsInLPInnerDiv p:nth-child(1){
+font-weight: 500;
+font-size: 14px;
+margin-bottom: 0.5rem;
+}
+
+
+/* //back button */
+
+.backButton {
+    position: fixed;
+    bottom: 6vh;
+    left: 46%;
+    width: 35px;
+    height: 35px;
+    font-size: large;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9;
+}
+
+.backButton span {
+    margin-right: 4px;
+}
+
+.mailSubjectDesc {
+    border: 1px solid rgb(114, 114, 114);
+    box-shadow: 0px 3px 1px -2px #00000033, 0px 2px 2px 0px #00000024, 0px 1px 5px 0px #0000001F;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 8px 5px 5px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mailSubjectDesc:hover {
+    box-shadow: 0px 2px 4px -1px #00000033, 0px 4px 5px 0px #00000024, 0px 1px 10px 0px #0000001F;
+}
+
+.mailSubjectDesc div:nth-child(1) {
+    /* border: 1px solid red; */
+    margin-right: 5px;
+    margin-left: 2px;
+    display: flex;
+}
+
+.mailSubjectDesc div:nth-child(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: small;
+    color: rgb(114, 114, 114);
+}
+
+/* //delete div */
+
+.outerBoxOfDelete {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cancelTaskDiv {
+    /* border: 1px solid red; */
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.deleteButton,
+.cancelButton {
+    border: none;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.cancelButton {
+    background-color: #E0E0E0;
+}
+
+.deleteButton {
+    background-color: #D32F2F;
+    color: white;
+
+}
+
+.deleteButton:hover,
+.cancelButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px #00000033, 0px 2px 2px 0px #00000024, 0px 1px 5px 0px #0000001F;
+}
+
+
+.completedTasksLP {
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* bottom: 0; */
+  }
+
+  .completeButtonLP{
+    color: red;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .completeButtonLP.active{
+    position: sticky;
+    top: 10px;
+  }
+
+  
+
+
+  .middleLine{
+    border: 0.5px solid #00000029;
+
+  }
+
+  .completedDivLP{
+    /* border: 1px solid red; */
+    margin-bottom: -5px;
+    height: 2.7rem;
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .completedDivLP img{
+    /* border: 1px solid red; */
+    margin-left: 10px;
+  }
+
+  .completedDivLP p{
+    margin-left: 8px;
+    font-weight: 500;
+  }
+  
+  
+   .outerLP{
+       /* border: 1px solid green; */
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    
+     .completedDropDown{
+       /* border: 1px solid purple; */
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.372);
+   }
